@@ -16,19 +16,21 @@
 	/>
 	<body>
 		<main>
-			<img
-				class="preview"
-				src="./asset/images/image-omelette.jpeg"
-				alt="Omelette Image"
-			/>
-			<section class="main-card">
-				<h1>Simple Omelette Recipe</h1>
-				<p>
-					An easy and quick dish perfect for any meal. This classic omelette combines
-					beaten eggs cooked to perfection, optionally filled with your choice of
-					cheese, vegetables, or meats.
-				</p>
-				<article>
+			<article>
+				<figure>
+					<img
+						class="preview"
+						src="./asset/images/image-omelette.jpeg"
+						alt="Omelette Image"
+					/>
+					<h1>Simple Omelette Recipe</h1>
+					<figcaption>
+						An easy and quick dish perfect for any meal. This classic omelette
+						combines beaten eggs cooked to perfection, optionally filled with your
+						choice of cheese, vegetables, or meats.
+					</figcaption>
+				</figure>
+				<section id="prep-time">
 					<h2>Preparation time</h2>
 					<ul>
 						<li>
@@ -41,7 +43,7 @@
 							<p><span>Cooking: </span>5 minutes</p>
 						</li>
 					</ul>
-				</article>
+				</section>
 				<section id="ingredients" class="recipe-section">
 					<h2>Ingredients</h2>
 					<ul>
@@ -105,25 +107,27 @@
 						additional fillings.
 					</p>
 					<table class="nutrition-table">
-						<tr>
-							<td>Calories</td>
-							<td><span>277kcal</span></td>
-						</tr>
-						<tr>
-							<td>Carbs</td>
-							<td><span>0g</span></td>
-						</tr>
-						<tr>
-							<td>Protein</td>
-							<td><span>20g</span></td>
-						</tr>
-						<tr>
-							<td>Fat</td>
-							<td><span>22g</span></td>
-						</tr>
+						<tbody>
+							<tr>
+								<th scope="row">Calories</th>
+								<td><span>277kcal</span></td>
+							</tr>
+							<tr>
+								<th scope="row">Carbs</th>
+								<td><span>0g</span></td>
+							</tr>
+							<tr>
+								<th scope="row">Protein</th>
+								<td><span>20g</span></td>
+							</tr>
+							<tr>
+								<th scope="row">Fat</th>
+								<td><span>22g</span></td>
+							</tr>
+						</tbody>
 					</table>
 				</section>
-			</section>
+			</article>
 		</main>
 	</body>
 </html>
