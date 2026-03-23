@@ -55,7 +55,7 @@ figure {
 }
 
 h1 {
-	font-size: clamp(1em, 2em, 5em);
+	font-size: clamp(1rem, 2em, 3em);
 	font-weight: 500;
 	color: var(--btone-900);
 }
@@ -129,6 +129,7 @@ li p {
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
+	counter-reset: step;
 }
 
 .recipe-section h2 {
@@ -159,9 +160,7 @@ ol li span {
 	color: var(--btone-600);
 }
 
-table,
-td,
-tr {
+table {
 	border-collapse: collapse;
 }
 
