@@ -25,7 +25,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ### Links
 
 - Solution URL: [Repository](https://github.com/SaucDev/Recipe-page)
-- Live Site URL: [Live page](https://your-live-site-url.com)
+- Live Site URL: [Live page](https://saucdev.github.io/Recipe-page/)
 
 ## My process
 
