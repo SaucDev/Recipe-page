@@ -35,7 +35,6 @@ article {
 	flex-direction: column;
 	width: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
 	border-radius: clamp(0rem, -0.44rem + 1.878vi, 1.25rem);
-	gap: 1em;
 	background-color: var(--white);
 }
 
@@ -47,7 +46,7 @@ figure {
 }
 
 .padded {
-	padding: 0 1rem;
+	padding: 0.5em 1rem;
 }
 
 .preview {
