@@ -42,7 +42,12 @@ figure {
 	display: flex;
 	flex-direction: column;
 	justify-content: left;
-	gap: 0.5em;
+	gap:0.5rem;
+	padding-bottom: 1rem;
+}
+
+.indented {
+	padding: 0 1rem;
 }
 
 .padded {
@@ -50,7 +55,9 @@ figure {
 }
 
 .preview {
-	padding: clamp(0rem, -0.66rem + 2.817vw, 1.875rem);
+	padding: clamp(0rem, -0.66rem + 2.817vw, 1.875rem)
+		clamp(0rem, -0.66rem + 2.817vw, 1.875rem) 0
+		clamp(0rem, -0.66rem + 2.817vw, 1.875rem);
 	border-radius: clamp(0rem, -0.22rem + 0.939vw, 0.625rem);
 }
 
@@ -63,7 +70,7 @@ p {
 
 #prep-time {
 	width: calc(100% - clamp(0rem, -0.704rem + 3.005vw, 2rem));
-	margin:auto;
+	margin: auto;
 	background-color: var(--rose-50);
 	display: flex;
 	flex-direction: column;
