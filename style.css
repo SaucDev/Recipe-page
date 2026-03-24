@@ -22,6 +22,7 @@
 }
 
 main {
+	padding: clamp(0rem, -1.429rem + 3.81vw, 2rem);
 	background-color: var(--stone-100);
 	display: flex;
 	flex-direction: column;
@@ -29,19 +30,12 @@ main {
 	min-height: 100vh;
 }
 
-.main-card {
-	padding: 0 1em;
-	display: flex;
-	flex-direction: column;
-	gap: 1.5em;
-}
-
 article {
 	display: flex;
 	flex-direction: column;
 	width: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
 	border-radius: clamp(0rem, -0.44rem + 1.878vi, 1.25rem);
-	gap: 1.5em;
+	gap: 1em;
 	background-color: var(--white);
 }
 
@@ -49,7 +43,7 @@ figure {
 	display: flex;
 	flex-direction: column;
 	justify-content: left;
-	gap: 0.8em;
+	gap: 0.5em;
 }
 
 .padded {
@@ -131,7 +125,7 @@ li p {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	gap: 1em;
+	gap: 1.5em;
 	counter-reset: step;
 }
 
