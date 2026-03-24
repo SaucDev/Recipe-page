@@ -21,43 +21,44 @@
 	--rose-50: hsl(330, 100%, 98%);
 }
 
-body {
+main {
 	background-color: var(--stone-100);
-	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
-	padding: clamp(0rem, -1.2rem + 5.12vi, 2rem);
+	min-height: 100vh;
+}
+
+.main-card {
+	padding: 0 1em;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5em;
 }
 
 article {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-color: var(--white);
-	width: clamp(23.438rem, 13.956rem + 40.453vw, 62.5rem);
-	padding: clamp(0rem, -1.214rem + 5.178vw, 5rem);
+	width: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
 	border-radius: clamp(0rem, -0.44rem + 1.878vi, 1.25rem);
 	gap: 1.5em;
+	background-color: var(--white);
 }
 
 figure {
 	display: flex;
 	flex-direction: column;
-	gap: 1em;
+	justify-content: left;
+	gap: 0.8em;
+}
+
+.padded {
+	padding: 0 1rem;
 }
 
 .preview {
-	border-radius: clamp(0rem, -0.22rem + 0.939vi, 0.625rem);
-	width: 100%;
-}
-
-h1 {
-	font-size: clamp(1rem, 2em, 3em);
-	font-weight: 500;
-	color: var(--btone-900);
+	padding: clamp(0rem, -0.66rem + 2.817vw, 1.875rem);
+	border-radius: clamp(0rem, -0.22rem + 0.939vw, 0.625rem);
 }
 
 figcaption,
@@ -68,13 +69,14 @@ p {
 }
 
 #prep-time {
-	width: 100%;
+	width: calc(100% - clamp(0rem, -0.704rem + 3.005vw, 2rem));
+	margin:auto;
 	background-color: var(--rose-50);
-	padding: 1.5em;
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
-	border-radius: 10px;
+	padding: 1em;
+	border-radius: clamp(0rem, -0.33rem + 1.408vw, 0.938rem);
 }
 
 #prep-time h2 {
@@ -147,7 +149,6 @@ li p {
 	content: "";
 	display: block;
 	height: 1px;
-	padding-top: 1em;
 	border-bottom: 1px solid var(--stone-150);
 }
 
@@ -169,12 +170,12 @@ tr > th {
 	text-align: start;
 }
 
-.nutrition-table tr:not(:last-child) {
+#nutrition-table tr:not(:last-child) {
 	border-bottom: 1px solid var(--stone-150);
 }
 
-.nutrition-table th,
-.nutrition-table td {
+#nutrition-table th,
+#nutrition-table td {
 	padding: 0.8em;
 	padding-left: 2em;
 	font-family: "Outfit", sans-serif;
@@ -183,7 +184,7 @@ tr > th {
 	color: var(--btone-600);
 }
 
-.nutrition-table td span {
+#nutrition-table td span {
 	color: var(--brown-800);
 	font-weight: 700;
 }
